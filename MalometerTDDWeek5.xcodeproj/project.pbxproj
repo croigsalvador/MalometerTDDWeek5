@@ -21,8 +21,16 @@
 		1D097D201963188700B1E4E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D097D031963188600B1E4E9 /* UIKit.framework */; };
 		1D097D211963188700B1E4E9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D097D051963188600B1E4E9 /* CoreData.framework */; };
 		1D097D291963188700B1E4E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D097D271963188700B1E4E9 /* InfoPlist.strings */; };
+		1D3825A31966AEEE000E22D1 /* StoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3825A21966AEEE000E22D1 /* StoryboardTests.m */; };
+		1D3825A51966B161000E22D1 /* Malometer_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3825A41966B161000E22D1 /* Malometer_iPhone.storyboard */; };
+		1D3825AC1966B22C000E22D1 /* IHAgentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3825AB1966B22C000E22D1 /* IHAgentsViewController.m */; };
+		1D3825AE1966B27D000E22D1 /* IHAgentsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3825AD1966B27D000E22D1 /* IHAgentsViewControllerTests.m */; };
+		1D3825B31966BA95000E22D1 /* IHAgentEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3825B21966BA95000E22D1 /* IHAgentEditViewController.m */; };
+		1D3825B51966BB00000E22D1 /* IHAgentEditViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3825B41966BB00000E22D1 /* IHAgentEditViewControllerTests.m */; };
 		1D3F3AC01963EFB600AB18FC /* Agent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F3ABF1963EFB600AB18FC /* Agent.m */; };
 		1D3F3AC51963EFF700AB18FC /* AgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F3AC41963EFF700AB18FC /* AgentTests.m */; };
+		1D3F3AC61963F16500AB18FC /* MalometerTDDWeek5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D097D131963188600B1E4E9 /* MalometerTDDWeek5.xcdatamodeld */; };
+		1D3F3AC91963F5B700AB18FC /* Agent+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F3AC81963F5B700AB18FC /* Agent+Model.m */; };
 		D6D603D3F206478B9554D6E1 /* libPods-MalometerTDDWeek5Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E04B2C3663084FECADB8F2BD /* libPods-MalometerTDDWeek5Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +63,19 @@
 		1D097D1D1963188700B1E4E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1D097D261963188700B1E4E9 /* MalometerTDDWeek5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MalometerTDDWeek5Tests-Info.plist"; sourceTree = "<group>"; };
 		1D097D281963188700B1E4E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D3825A21966AEEE000E22D1 /* StoryboardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardTests.m; sourceTree = "<group>"; };
+		1D3825A41966B161000E22D1 /* Malometer_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Malometer_iPhone.storyboard; sourceTree = "<group>"; };
+		1D3825AA1966B22C000E22D1 /* IHAgentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHAgentsViewController.h; sourceTree = "<group>"; };
+		1D3825AB1966B22C000E22D1 /* IHAgentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAgentsViewController.m; sourceTree = "<group>"; };
+		1D3825AD1966B27D000E22D1 /* IHAgentsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAgentsViewControllerTests.m; sourceTree = "<group>"; };
+		1D3825B11966BA95000E22D1 /* IHAgentEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHAgentEditViewController.h; sourceTree = "<group>"; };
+		1D3825B21966BA95000E22D1 /* IHAgentEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAgentEditViewController.m; sourceTree = "<group>"; };
+		1D3825B41966BB00000E22D1 /* IHAgentEditViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHAgentEditViewControllerTests.m; sourceTree = "<group>"; };
 		1D3F3ABE1963EFB600AB18FC /* Agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
 		1D3F3ABF1963EFB600AB18FC /* Agent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agent.m; sourceTree = "<group>"; };
 		1D3F3AC41963EFF700AB18FC /* AgentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgentTests.m; sourceTree = "<group>"; };
+		1D3F3AC71963F5B700AB18FC /* Agent+Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Agent+Model.h"; sourceTree = "<group>"; };
+		1D3F3AC81963F5B700AB18FC /* Agent+Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Agent+Model.m"; sourceTree = "<group>"; };
 		E04B2C3663084FECADB8F2BD /* libPods-MalometerTDDWeek5Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MalometerTDDWeek5Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,7 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				1D3F3AC21963EFC700AB18FC /* AppDelegate */,
+				1D3825A61966B1DB000E22D1 /* Controller */,
 				1D3F3AC11963EFBE00AB18FC /* Model */,
+				1D3825A91966B1F1000E22D1 /* View */,
 				1D097D081963188600B1E4E9 /* Supporting Files */,
 			);
 			path = MalometerTDDWeek5;
@@ -146,7 +166,9 @@
 		1D097D241963188700B1E4E9 /* MalometerTDDWeek5Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1D3825A71966B1E3000E22D1 /* Controller */,
 				1D3F3AC31963EFDC00AB18FC /* Model */,
+				1D3825A81966B1E8000E22D1 /* View */,
 				1D097D251963188700B1E4E9 /* Supporting Files */,
 			);
 			path = MalometerTDDWeek5Tests;
@@ -161,12 +183,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1D3825A61966B1DB000E22D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D3825AA1966B22C000E22D1 /* IHAgentsViewController.h */,
+				1D3825AB1966B22C000E22D1 /* IHAgentsViewController.m */,
+				1D3825B11966BA95000E22D1 /* IHAgentEditViewController.h */,
+				1D3825B21966BA95000E22D1 /* IHAgentEditViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D3825A71966B1E3000E22D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D3825AD1966B27D000E22D1 /* IHAgentsViewControllerTests.m */,
+				1D3825B41966BB00000E22D1 /* IHAgentEditViewControllerTests.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D3825A81966B1E8000E22D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D3825A21966AEEE000E22D1 /* StoryboardTests.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1D3825A91966B1F1000E22D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D3825A41966B161000E22D1 /* Malometer_iPhone.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1D3F3AC11963EFBE00AB18FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				1D097D131963188600B1E4E9 /* MalometerTDDWeek5.xcdatamodeld */,
 				1D3F3ABE1963EFB600AB18FC /* Agent.h */,
 				1D3F3ABF1963EFB600AB18FC /* Agent.m */,
+				1D3F3AC71963F5B700AB18FC /* Agent+Model.h */,
+				1D3F3AC81963F5B700AB18FC /* Agent+Model.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -266,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3825A51966B161000E22D1 /* Malometer_iPhone.storyboard in Resources */,
 				1D097D0C1963188600B1E4E9 /* InfoPlist.strings in Resources */,
 				1D097D171963188600B1E4E9 /* Images.xcassets in Resources */,
 			);
@@ -320,9 +381,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D097D0E1963188600B1E4E9 /* main.m in Sources */,
+				1D3F3AC91963F5B700AB18FC /* Agent+Model.m in Sources */,
+				1D3825B31966BA95000E22D1 /* IHAgentEditViewController.m in Sources */,
 				1D3F3AC01963EFB600AB18FC /* Agent.m in Sources */,
 				1D097D121963188600B1E4E9 /* IHAppDelegate.m in Sources */,
 				1D097D151963188600B1E4E9 /* MalometerTDDWeek5.xcdatamodeld in Sources */,
+				1D3825AC1966B22C000E22D1 /* IHAgentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3825B51966BB00000E22D1 /* IHAgentEditViewControllerTests.m in Sources */,
 				1D3F3AC51963EFF700AB18FC /* AgentTests.m in Sources */,
+				1D3825AE1966B27D000E22D1 /* IHAgentsViewControllerTests.m in Sources */,
+				1D3825A31966AEEE000E22D1 /* StoryboardTests.m in Sources */,
+				1D3F3AC61963F16500AB18FC /* MalometerTDDWeek5.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

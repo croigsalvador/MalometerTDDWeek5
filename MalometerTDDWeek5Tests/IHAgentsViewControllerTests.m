@@ -1,39 +1,41 @@
 //
-//  AgentTests.m
+//  IHAgentsViewControllerTests.m
 //  MalometerTDDWeek5
 //
-//  Created by Carlos Roig Salvador on 02/07/14.
+//  Created by Carlos Roig Salvador on 04/07/14.
 //  Copyright (c) 2014 IronHack. All rights reserved.
 //
 
 
 #import <XCTest/XCTest.h>
 //#import <OCMock/OCMock.h>
-#import "Agent.h"
+#import "IHAgentsViewController.h"
+
+static NSString * const kStoryboardName              = @"Malometer_iPhone";
 
 
-@interface AgentTests : XCTestCase {
+@interface IHAgentsViewControllerTests : XCTestCase {
     // Core Data stack objects.
     NSManagedObjectModel *model;
     NSPersistentStoreCoordinator *coordinator;
     NSPersistentStore *store;
     NSManagedObjectContext *context;
     // Object to test.
-    Agent *sut;
+    IHAgentsViewController *sut;
 }
 
 @end
 
 
-@implementation AgentTests
+@implementation IHAgentsViewControllerTests
 
 #pragma mark - Set up and tear down
 
 - (void) setUp {
     [super setUp];
 
-   [self createCoreDataStack];
-//    [self createFixture];
+//    [self createCoreDataStack];
+    [self createFixture];
     [self createSut];
 }
 
@@ -58,7 +60,8 @@
 
 
 - (void) createSut {
-    sut = [NSEntityDescription insertNewObjectForEntityForName:@"Agent" inManagedObjectContext:context];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:kStoryboardName bundle:nil] ;
+    sut = [storyboard instantiateViewControllerWithIdentifier:kAgentsViewControllerID];
 }
 
 
