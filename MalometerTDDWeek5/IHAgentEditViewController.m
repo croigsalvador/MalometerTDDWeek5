@@ -21,7 +21,6 @@ NSString * const kAgentEditViewControllerID             = @"AgentEditViewControl
 - (void)viewDidLoad {
     self.title = @"Pepito";
     self.nameTextField.text = self.agent.name;
-    self.nameTextField.text = @"Pepito";
     
 }
 @end

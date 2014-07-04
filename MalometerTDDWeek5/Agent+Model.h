@@ -10,4 +10,6 @@
 
 @interface Agent (Model)
 
++ (Agent *)createAgentWithName:(NSString *)name inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

@@ -63,16 +63,9 @@ static NSString * const kNametTextFieldKey           = @"nameTextField";
 
 
 - (void) createFixture {
-    agent = [self createAgentWithName:kAgentNameKey];
-    agent2 = [self createAgentWithName:kAgent2NameKey];
+    agent = [Agent createAgentWithName:kAgentNameKey inManagedObjectContext:context];
+    agent2 = [Agent createAgentWithName:kAgent2NameKey inManagedObjectContext:context];
 }
-
-- (Agent *)createAgentWithName:(NSString *)name {
-    Agent *ag =[NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Agent class]) inManagedObjectContext:context];
-    ag.name = name;
-    return ag;
-}
-
 
 - (void) createSut {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:kStoryboardName bundle:nil] ;

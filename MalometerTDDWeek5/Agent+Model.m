@@ -10,4 +10,10 @@
 
 @implementation Agent (Model)
 
++ (Agent *)createAgentWithName:(NSString *)name inManagedObjectContext:(NSManagedObjectContext *)context {
+    Agent *ag =[NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Agent class]) inManagedObjectContext:context];
+    ag.name = name;
+    return ag;
+}
+
 @end
